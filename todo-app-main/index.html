@@ -14,17 +14,18 @@
       <div class="content-top">
             <h1>Todo</h1>
             <div class="mode" id="mode-svg">
-              <img src="./images/icon-sun.svg" alt="icon-sun">
-              <img src="./images/icon-moon.svg" alt="icon-moon">
+              <img src="./images/icon-sun.svg"  class="sun" alt="icon-sun">
+              <img src="./images/icon-moon.svg" class="moon" alt="icon-moon">
             </div>
           </div> 
   </header>
     <main>
       <div id="main-content">
         <div class="add-content" id="addContent">
-              <input type="text" id="task-input" class="text-input" placeholder="Create a new todo">
+              <input type="text" id="task-input" class="text-input" placeholder="Create a new todo" maxlength="5o">
         </div>
-        <div class="task">
+
+        <div class="task" id="task1">
           <div class="check-box">
             <div class="check">
               <img src="./images/icon-check.svg" alt="check">
@@ -145,14 +146,12 @@
         </div>
         
 
-        <div class="content-footer">
-          <!-- Add dynamic number --> <span><span id="itemsLeft">0</span>items left</span>
-          <span id="" class="">Clear Completed</span>
+        <div class="content-footer" id="contentFooter">
+          <span><span id="itemsLeft">0</span> items left</span>
+          <span id="clearBtn" class="clearButton">Clear Completed</span>
         </div>
         <div class="display-states" id="displayStates">
-          <span id="displayAll">All</span>
-          <span id="displayActive">Active</span>
-          <span id="displayCompleted">Completed</span>
+          <span id="displayAll">All</span><span id="displayActive">Active</span><span id="displayCompleted">Completed</span>
         </div>
         <!-- <p>Drag and drop to reorder list</p> -->
       </div>
