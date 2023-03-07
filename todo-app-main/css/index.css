@@ -198,7 +198,7 @@ header h1{
     left: 93%;
     top: 40%;
     cursor: pointer;
-    display: none;
+    /* display: none; */
   }
 
   .task:hover .cancel{
@@ -223,11 +223,11 @@ header h1{
   
 
   .checked-span{
-    color: hsl(233, 14%, 35%);
+    color: hsl(233, 11%, 84%);
     text-decoration: line-through;
   }
   .checked-span-LM{
-    color: hsl(233, 11%, 84%) !important;
+    color: hsl(233, 14%, 35%) !important;
   }
 
 
@@ -286,7 +286,7 @@ header h1{
     box-shadow: 0 30px 30px -15px hsl(231, 21%, 6%);
   }
 
-  .display-states-darkmode{
+  .display-states-darkMode{
     box-shadow: 0 30px 30px -15px hsl(231, 21%, 6%);
   }
 
