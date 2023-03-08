@@ -58,7 +58,7 @@ header h1{
     cursor: pointer;
 }
 
-#main-content{
+#main-content {
     width: 30rem;
     display: flex;
     flex-direction: column;
@@ -67,6 +67,17 @@ header h1{
     position: relative;
     bottom: 6rem;
     margin: 0 auto;
+}
+
+#task-container {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* position: relative; */
+  bottom: 6rem;
+  margin: 0 auto;
 }
 
 .add-content{
@@ -104,7 +115,7 @@ header h1{
     color: hsl(234, 39%, 85%);
 }
 
-.task{
+.task {
     display: none;
     padding-left: .4rem;
     align-items: center;
@@ -125,7 +136,7 @@ header h1{
     box-shadow: 0 15px 20px -3px hsl(231, 21%, 6%);
   }
 
-  .border-radius{
+  .border-radius:nth-of-type(1){
     border-radius: .5rem .5rem 0 0;
   }
 
@@ -160,7 +171,7 @@ header h1{
     margin-left: .7rem;
     margin-right: .7rem;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     top: 40%;
     display: flex;
     align-items: center;
@@ -193,10 +204,12 @@ header h1{
     background: linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%)) ;
   }
 
-  .cancel{
-    position: absolute;
-    left: 93%;
-    top: 40%;
+  .task .cancel{
+    margin-right: 3.1rem;
+    margin-left: auto;
+    /* position: absolute; */
+    /* left: 93%; */
+    /* top: 40%; */
     cursor: pointer;
     /* display: none; */
   }
