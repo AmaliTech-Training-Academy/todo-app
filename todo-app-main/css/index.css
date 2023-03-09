@@ -252,6 +252,7 @@ header h1{
     align-items: center;
     justify-content: space-between;
     border: none;
+    height: 4rem;
     color: hsl(234, 11%, 52%);
     /* box-shadow: 0 35px 15px -20px hsl(0, 0%, 63%); */
   }
