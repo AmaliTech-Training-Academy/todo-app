@@ -309,4 +309,14 @@ header h1{
     font-weight: 700;
   }
 
+  .drag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .task.dragging{
+    opacity: .5;
+  }
+
   
