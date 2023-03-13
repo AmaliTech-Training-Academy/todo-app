@@ -319,4 +319,81 @@ header h1{
     opacity: .5;
   }
 
+  @media screen and (max-width: 430px) {
+    html{
+      font-size: 19px;
+    }
+  
+    header{
+      background: url(../images/bg-mobile-light.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .content-top{
+      width: 20rem;
+    }
+    .inner-header{
+      width: 75%;
+      min-width: 25rem;
+      max-width: 29rem;
+    }
+    
+    .header-darkmode {
+      background: url(../images/bg-mobile-dark.jpg);
+    }
+  
+  
+  
+    #main-content{
+      width: 75%;
+      min-width: 25rem;
+      max-width: 29rem;
+    }
+  
+  
+  
+    .task-txt-input{
+      font-size: .9rem;
+    }
+    .task{
+      height: 3.5rem;
+      font-size: .9rem;
+    }
+  
+  
+  
+    .check-border{
+      width: 1.3rem;
+      height: 1.3rem;
+      justify-content: center;
+    }
+    .check-border .check{
+      width: 95%;
+      height: 95%;
+    }
+    .check-border .second-task-check-margin{
+      margin-top: .05rem;
+    }
+  
+  
+  
+    .info-div{
+      box-shadow: 0 20px 30px hsl(231, 21%, 6%);
+    }
+    .info-div-shadow-LM{
+      box-shadow: 0 20px 30px hsl(0, 0%, 63%);
+    }
+  
+  
+  
+    .display-states{
+      width: 11rem;
+      position: relative;
+      bottom: 4rem;
+      right: .5rem;
+      box-shadow: none;
+    }
+  }
+
   
