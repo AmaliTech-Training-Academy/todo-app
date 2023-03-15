@@ -11,8 +11,8 @@ const infoDiv=document.getElementById("contentFooter");
 const displayStates=document.getElementById("displayStates");
 const addNewTask=document.getElementById("addNewTask");
 const darkLightBtn=document.getElementById("mode-svg");
-const draggables = document.querySelectorAll('.container');
-const containers = document.querySelectorAll('.task');
+const draggables = document.querySelectorAll('.task');
+const container = document.querySelector('#main-content');
 
 let count=0
 const taskBoxList=[];
@@ -324,18 +324,19 @@ function addCheckToTasks(){
 
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () =>{
-        console.log('dragstart')
+        // console.log('dragstart')
         draggable.classList.add('dragging')
     })
     draggable.addEventListener('dragend', () => {
         draggable.classList.remove('dragging')
 })
 })
-containers.forEach(container => {
+// container.forEach(container => {
     container.addEventListener('dragover', e => {
         // console.log('dragover')
         e.preventDefault()
         const afterElement = getDragAfterElement(container, e.clientY)
+        console.log(afterElement)
        const draggable =  document.querySelector('.dragging')
        if (afterElement == null) {
             console.log(container, draggable)
@@ -345,7 +346,7 @@ containers.forEach(container => {
        }
     //    console.log('dragover')
 })
-})
+// })
 
 function getDragAfterElement(container, y) {
     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
@@ -358,7 +359,7 @@ function getDragAfterElement(container, y) {
         } else {
             return closest
         }
-    }, {offset: Number.NEGATIVE_INFINITY})
+    }, {offset: Number.NEGATIVE_INFINITY}).element
 }
 
 
