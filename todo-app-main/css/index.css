@@ -243,7 +243,21 @@ header h1{
     color: hsl(233, 14%, 35%) !important;
   }
 
+  .accordion{
+    cursor: pointer;
+    transition: 0.4s;
+  }
 
+  .active, .accordion:hover{
+    background-color: #FFF;
+  }
+
+  .description{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 
   .content-footer{
     padding: 0 1.1rem;
